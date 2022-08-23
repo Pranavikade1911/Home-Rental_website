@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to HomeRent</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e9f6ff1079.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav id="navBar" class="navbar-white">
+        <a href="index.html">
+            <img src="images/logo-red.png" class="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#">Popular Places</a></li>
+            <li><a href="#">Travel Outside</a></li>
+            <li><a href="listing.html">Online packages</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register Now</a>
+        <i class="fas fa-bars" onclick="togglebtn()"></i>
+    </nav>
+
+    <div class="house-details">
+        <div class="house-title">
+            <h1>Wenge House</h1>
+            <div class="row">
+                <div>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <span>245 Reviews</span>
+                </div>
+                <div>
+                    <p>Location: San Francisco, california, United States</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img-1"><img src="images/house-1.png" alt=""></div>
+            <div><img src="images/house-2.png" alt=""></div>
+            <div><img src="images/house-3.png" alt=""></div>
+            <div><img src="images/house-4.png" alt=""></div>
+            <div><img src="images/house-5.png" alt=""></div>
+        </div>
+        <div class="small-details">
+            <h2>Entire rental unit hosted by Brandon</h2>
+            <p>2 guest &nbsp; &nbsp; 2 beds &nbsp; &nbsp; 1 bathroom</p>
+            <h4>$ 100 / day</h4>
+        </div>
+        <hr class="line">
+        <form class="check-form">
+            <div>
+                <label>Check-in</label>
+                <input type="text" placeholder="Add date">
+            </div>
+            <div>
+                <label>Check-out</label>
+                <input type="text" placeholder="Add date">
+            </div>
+            <div class="guest-field">
+                <label>Guest</label>
+                <input type="text" placeholder="2 guest">
+            </div>
+            <button type="submit">Check Availability</button>
+        </form>
+
+        <ul class="details-list">
+            <li><i class="fas fa-home"></i> Entire Home
+                <span>You will have the entire flat for you.</span>
+            </li>
+            <li><i class="fas fa-paint-brush"></i> Enhanced Clean
+                <span>This host has committed to staybnb's cleaning process.</span>
+            </li>
+            <li><i class="fas fa-map-marker-alt"></i> Great Location
+                <span>90% of recent guests gave the location a 5 star rating.</span>
+            </li>
+            <li><i class="fas fa-heart"></i> Entire Home
+                <span>100% of recent guests gave the check-in process a 5 star rating.</span>
+            </li>
+        </ul>
+
+        <hr class="line">
+
+        <p class="home-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatibus
+            exercitationem quas ex
+            perferendis in reprehenderit id dolore fuga laboriosam recusandae voluptate quae quia unde vel, accusantium
+            dolorum fugit molestiae! Modi alias cum soluta excepturi ad tenetur repudiandae ea sequi quod dolorum
+            distinctio labore nulla saepe corporis hic nemo dicta laborum pariatur, recusandae impedit. Iste aliquid
+            enim corporis ipsum illo.</p>
+        <hr class="line">
+
+        <div class="map">
+            <h3>Location On Map</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12618.74233520875!2d-122.44313828206325!3d37.75051986950824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1646424284476!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <b>San Francisco, California, United States </b>
+            <p>It's like a home away from home.</p>
+        </div>
+
+        <hr class="line">
+
+        <div class="host">
+            <img src="images/host.png" alt="">
+            <div>
+                <h2>Hosted by Brandon</h2>
+                <p><span>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </span>&nbsp; &nbsp; 245 reviews &nbsp; &nbsp; Response rate 100% &nbsp; &nbsp; Response time: 60min
+                </p>
+            </div>
+        </div>
+        <a href="#" class="contact-host">Conatct Host</a>
+    </div>
+
+    <div class="footer">
+        <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+        <hr>
+        <p>Copyright @ 2022, Staybnb</p>
+    </div>
+
+    <script>
+        var navbar = document.getElementById('navBar');
+
+        function togglebtn() {
+            navBar.classList.toggle('hide-menu')
+        }
+    </script>
+</body>
+
+</html>
